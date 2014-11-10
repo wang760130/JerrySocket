@@ -7,6 +7,11 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
+/**
+ * TCP通客户端器端
+ * @author JerryWang
+ *
+ */
 public class SockedClient {
 	Socket socket = null;
 	public void sendServer() {
@@ -44,5 +49,10 @@ public class SockedClient {
 				e.printStackTrace();
 			}
 		}
+	}
+	
+	public static void main(String[] args) {
+		SockedClient sockedClient = new SockedClient();
+		sockedClient.sendServer();
 	}
 }
