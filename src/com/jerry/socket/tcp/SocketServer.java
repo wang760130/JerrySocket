@@ -8,6 +8,11 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+/**
+ * TCP通讯服务器端
+ * @author JerryWang
+ *
+ */
 public class SocketServer {
 	ServerSocket serverSocket = null;
 	Socket socket = null;
