@@ -12,7 +12,7 @@ import java.net.UnknownHostException;
  * @author JerryWang
  *
  */
-public class SockedClient {
+public class SocketClient {
 	Socket socket = null;
 	public void sendServer() {
 		try {
@@ -52,7 +52,7 @@ public class SockedClient {
 	}
 	
 	public static void main(String[] args) {
-		SockedClient sockedClient = new SockedClient();
+		SocketClient sockedClient = new SocketClient();
 		sockedClient.sendServer();
 	}
 }
