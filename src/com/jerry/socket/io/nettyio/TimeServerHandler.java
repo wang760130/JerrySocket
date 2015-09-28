@@ -1,13 +1,12 @@
 package com.jerry.socket.io.nettyio;
 
-/*import io.netty.buffer.ByteBuf;
+import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
 
 public class TimeServerHandler extends ChannelHandlerAdapter {
 
-    @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         ByteBuf buf = (ByteBuf) msg;
         byte[] req = new byte[buf.readableBytes()];
@@ -20,7 +19,6 @@ public class TimeServerHandler extends ChannelHandlerAdapter {
         ctx.fireChannelRead(msg);
     }
 
-    @Override
     public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
         ctx.flush();
         ctx.fireChannelReadComplete();
@@ -32,4 +30,4 @@ public class TimeServerHandler extends ChannelHandlerAdapter {
         ctx.fireExceptionCaught(cause);
     }
 
-}*/
+}

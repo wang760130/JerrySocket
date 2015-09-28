@@ -1,6 +1,6 @@
 package com.jerry.socket.io.nettyio;
 
-/*import io.netty.bootstrap.Bootstrap;
+import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelOption;
@@ -34,12 +34,8 @@ public class TimeClient {
         }
     }
 
-    *//**
-     * @param args
-     * @throws Exception
-     *//*
     public static void main(String[] args) throws Exception {
         int port = 8080;
         new TimeClient().connect(port, "127.0.0.1");
     }
-}*/
+}

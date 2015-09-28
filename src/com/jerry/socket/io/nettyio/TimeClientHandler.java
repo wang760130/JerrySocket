@@ -1,6 +1,5 @@
 package com.jerry.socket.io.nettyio;
-
-/*import io.netty.buffer.ByteBuf;
+import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
@@ -19,12 +18,10 @@ public class TimeClientHandler extends ChannelHandlerAdapter {
         firstMessage.writeBytes(req);
     }
 
-    @Override
     public void channelActive(ChannelHandlerContext ctx) {
         ctx.writeAndFlush(firstMessage);
     }
 
-    @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         ByteBuf buf = (ByteBuf) msg;
         byte[] req = new byte[buf.readableBytes()];
@@ -38,4 +35,4 @@ public class TimeClientHandler extends ChannelHandlerAdapter {
         logger.warning("Unexpected exception from downstream : " + cause.getMessage());
         ctx.close();
     }
-}*/
+}
